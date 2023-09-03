@@ -1,0 +1,98 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+/* Custom CSS for Tip Calculator */
+
+/* Body and Container Styles */
+body {
+  background: linear-gradient(to bottom, #1a7a61, #145a45);
+  font-family: "Montserrat", sans-serif; /* Use Montserrat font */
+}
+
+.container {
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Styles */
+h1 {
+  color: #333;
+}
+
+/* Form Styles */
+form {
+  margin-bottom: 20px;
+}
+
+/* Input Styles */
+.form-group label {
+  font-weight: bold;
+}
+
+.form-control {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border: none;
+  margin-left: 10px;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  background-color: #0056b3;
+}
+
+/* Results Section Styles */
+h4 {
+  margin-top: 20px;
+}
+
+#tipAmount,
+#totalBill {
+  font-weight: bold;
+}
+
+.error-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  z-index: 1000; /* Ensure it's above other elements */
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.error-message {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+    width: 95%;
+  }
+
+  .btn {
+    width: 100%;
+    margin: 10px auto;
+    display: block;
+  }
+}
